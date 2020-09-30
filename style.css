@@ -1,0 +1,1093 @@
+:root {
+    --fontTexto:  'Raleway', sans-serif;
+    --fontHeading: 'Staatliches', cursive;
+
+    /** Colores **/
+    --azulClaro : #d6eaf7;
+    --azulOscuro : #1d3557;
+    --rojo : #ed2a26;
+    --rojoOscuro : #AF1F24;
+    --blanco: #FFFFFF;
+}
+
+/* Layout */
+* {
+    text-decoration: var(--fontTexto);
+    margin: 0;
+}
+
+body {
+    background: var(--blanco);
+}
+
+footer {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    color: white;
+    background-color: var(--azulOscuro);
+}
+
+p {
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Texto */
+.h1__graphicDesigner {
+    position: relative;
+    text-decoration: var(--fontHeading);
+    top: 90px;
+    left: 120px;
+    color: var(--azulOscuro);
+    /* mix-blend-mode: invert(1); */
+    filter: drop-shadow(.16em .08em var(--azulClaro));
+    transition: 0.5s;
+    animation: animate3 3s ease infinite;
+}
+
+.h1__webDesigner {
+    position: relative;
+    text-decoration: var(--fontHeading);
+    top: -120px;
+    left: 10px;
+    color: var(--azulOscuro);
+    /* mix-blend-mode: invert(1); */
+    filter: drop-shadow(.16em .08em var(--azulClaro));
+    transition: 0.5s;
+    animation: animate3 7s ease-in infinite;
+}
+
+.h1__webDeveloper {
+    position: relative;
+    text-decoration: var(--fontHeading);
+    top: -230px;
+    left: 5px;
+    color: var(--azulOscuro);
+    /* mix-blend-mode: invert(1); */
+    filter: drop-shadow(.16em .08em var(--azulClaro));
+    transition: 0.5s;
+    animation: animate3 8s ease-out infinite;
+}
+
+.h1__about {
+    position: relative;
+    text-decoration: var(--fontHeading);
+    top: -110px;
+    left: 340px;
+    color: var(--azulOscuro);
+    /* mix-blend-mode: invert(1); */
+    filter: drop-shadow(.16em .08em var(--azulClaro));
+    transition: 0.5s;
+    animation: animate3 5s ease-in-out infinite;
+}
+
+.h1__contact {
+    position: relative;
+    text-decoration: var(--fontHeading);
+    top: 90px;
+    left: 250px;
+    color: var(--azulOscuro);
+    /* mix-blend-mode: invert(1); */
+    filter: drop-shadow(.16em .08em var(--azulClaro));
+    transition: 0.5s;
+    animation: animate3 6s ease-in-out infinite;
+}
+
+
+/* Landing Banner*/
+.landingBanner__body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+    background-image: url("img/background.css");
+}
+
+/* circles */
+.square {
+    margin-top: 100px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square .span1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    opacity: 50%;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate 6s linear infinite;
+}
+/* .square:hover span:nth-child(1) {
+    background: rgba(0, 0, 255, 0.8);
+} */
+.square .span2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    opacity: 50%;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 10s linear infinite;
+}
+
+.square .span3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px outset black;
+    opacity: 50%;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* circulos Graphic Designer */
+.circulo__graphicDesigner1 {
+    position: absolute;
+    top: 270px;
+    left: -0px;
+    width: 10%;
+    height: 10%;
+    background-color: var(--rojo);
+    border: 2px solid var(--rojo);
+    opacity: 87%; 
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: animate1 3s linear infinite;
+}
+
+
+
+.circulo__graphicDesigner2 {
+    position: absolute;
+    top: 260px;
+    left: -15px;
+    width: 18%;
+    height: 15%;
+    transition: 0.5s;
+    animation: animate3 6s ease-in-out infinite;
+}
+
+.circulo__graphicDesigner3 {
+    position: absolute;
+    top: 260px;
+    left: -20px;
+    width: 20%;
+    height: 12%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+}
+
+.circulo__graphicDesigner4 {
+    position: absolute;
+    top: 258px;
+    left: -35px;
+    width: 25%;
+    height: 16%;
+    background-color: rosybrown;
+    border: 2px solid rosybrown;
+    border-radius: 95% 135% 125% 90% / 96% 95% 95% 90%;
+    opacity: 70%;
+    transition: 0.5s;
+    animation: animate3 4s ease-in-out reverse infinite;
+}
+
+.circulo__graphicDesigner5 {
+    position: absolute;
+    top: 258px;
+    left: -335px;
+    width: 95%;
+    height: 25%;
+    background-color: rosybrown;
+    border: 2px solid rosybrown;
+    border-radius: 55% 95% 25% 10% / 65% 85% 35% 30%;
+    opacity: 70%;
+    z-index: 7;
+    opacity: 1%;
+    /* transition: 0.5s; */
+    /* animation: animate3 4s ease-in-out reverse infinite; */
+}
+
+.circulo__graphicDesigner6 {
+    position: absolute;
+    top: 280px;
+    left: -15px;
+    width: 6%;
+    height: 8%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+    visibility: hidden;
+    filter: grayscale(100%)
+}
+
+.circulo__graphicDesigner7 {
+    position: absolute;
+    top: 280px;
+    left: -15px;
+    width: 3%;
+    height: 4%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+    visibility: hidden;
+    filter: grayscale(100%)
+}
+
+.circulo__graphicDesigner8 {
+    position: absolute;
+    top: 280px;
+    left: -15px;
+    width: 15%;
+    height: 14%;
+    transition: 0.5s;
+    animation: animate3 1s ease-in-out infinite;
+    visibility: hidden;
+}
+
+.circulo__graphicDesigner9 {
+    position: absolute;
+    top: 280px;
+    left: -15px;
+    width: 15%;
+    height: 14%;
+    transition: 0.5s;
+    animation: animate3 2s ease-in infinite;
+    visibility: hidden;
+}
+.circulo__graphicDesigner1:hover {
+    background-color: var(--azulOscuro);
+    border-color: var(--azulOscuro);
+}
+
+.circulo__graphicDesigner5:hover ~ .circulo__graphicDesigner1   {
+    background-color: var(--azulOscuro);
+    border-color: var(--azulOscuro);
+}
+
+.circulo__graphicDesigner5:hover ~ .circulo__graphicDesigner3 {
+    top: -50px;
+    left: 465px;
+    width: 30%;
+    height: 30%;
+}
+
+.circulo__graphicDesigner5:hover ~ .circulo__graphicDesigner2 {
+    top: 190px;
+    left: -255px;
+    width: 30%;
+    height: 30%;
+}
+
+.circulo__graphicDesigner5:hover ~ .circulo__graphicDesigner6 {
+    top: 390px;
+    left: -205px;
+    visibility: visible;
+}
+
+.circulo__graphicDesigner5:hover ~ .circulo__graphicDesigner7 {
+    top: 80px;
+    left: 715px;
+    visibility: visible;
+}
+
+.circulo__graphicDesigner5:hover ~ .circulo__graphicDesigner8 {
+    top: 280px;
+    left: 615px;
+    visibility: visible;
+}
+
+.circulo__graphicDesigner5:hover ~ .circulo__graphicDesigner9 {
+    top: -60px;
+    left: -245px;
+    width: 30%;
+    height: 30%;
+    visibility: visible;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translate3d(4px, 8px, 56px)
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+/* circulos Web Designer */
+.circulo__webDesigner1 {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    width: 10%;
+    height: 10%;
+    background-color: var(--rojo);
+    border: 2px solid var(--rojo);
+    opacity: 87%; 
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: animate1 3s linear infinite;
+}
+
+.circulo__webDesigner2 {
+    position: absolute;
+    top: -3px;
+    left: -44px;
+    width: 40%;
+    height: 50%;
+    transition: 0.5s;
+    animation: animate3 6s ease-in-out infinite;
+}
+
+.circulo__webDesigner3 {
+    position: absolute;
+    top: -18px;
+    left: -80px;
+    width: 55%;
+    height: 55%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+}
+
+.circulo__webDesigner4 {
+    position: absolute;
+    top: 55px;
+    left: -14px;
+    width: 25%;
+    height: 16%;
+    background-color: rosybrown;
+    border: 2px solid rosybrown;
+    border-radius: 95% 135% 125% 90% / 96% 95% 95% 90%;
+    opacity: 70%;
+    transition: 0.5s;
+    animation: animate3 4s ease-in-out reverse infinite;
+}
+
+.circulo__webDesigner5 {
+    position: absolute;
+    top: 60px;
+    left: -314px;
+    width: 95%;
+    height: 30%;
+    background-color: rosybrown;
+    border: 2px solid rosybrown;
+    border-radius: 55% 95% 25% 10% / 65% 85% 35% 30%;
+    opacity: 70%;
+    z-index: 7;
+    opacity: 1%;
+    /* transition: 0.5s; */
+    /* animation: animate3 4s ease-in-out reverse infinite; */
+}
+
+.circulo__webDesigner6 {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    width: 6%;
+    height: 8%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+    visibility: hidden;
+    filter: grayscale(100%)
+}
+
+.circulo__webDesigner7 {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    width: 30%;
+    height: 40%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+    visibility: hidden;
+    filter: grayscale(100%)
+}
+
+.circulo__webDesigner8 {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    width: 15%;
+    height: 14%;
+    transition: 0.5s;
+    animation: animate3 1s ease-in-out infinite;
+    visibility: hidden;
+}
+
+.circulo__webDesigner9 {
+    position: absolute;
+    top: 50px;
+    left: -270px;
+    width: 15%;
+    height: 14%;
+    transition: 0.5s;
+    animation: animate3 2s ease-in infinite;
+    visibility: hidden;
+}
+
+.circulo__webDesigner1:hover {
+    background-color: var(--azulOscuro);
+    border-color: var(--azulOscuro);
+}
+
+.circulo__webDesigner5:hover ~ .circulo__webDesigner1   {
+    background-color: var(--azulOscuro);
+    border-color: var(--azulOscuro);
+}
+
+.circulo__webDesigner5:hover ~ .circulo__webDesigner3 {
+    top: -150px;
+    left: 365px;
+    width: 90%;
+    height: 90%;
+}
+
+.circulo__webDesigner5:hover ~ .circulo__webDesigner2 {
+    top: 60px;
+    left: -455px;
+    width: 90%;
+    height: 90%;
+}
+
+.circulo__webDesigner5:hover ~ .circulo__webDesigner6 {
+    top: 390px;
+    left: -205px;
+    visibility: visible;
+}
+
+.circulo__webDesigner5:hover ~ .circulo__webDesigner7 {
+    top: 80px;
+    left: 615px;
+    visibility: visible;
+}
+
+.circulo__webDesigner5:hover ~ .circulo__webDesigner8 {
+    top: 380px;
+    left: 615px;
+    visibility: visible;
+}
+
+.circulo__webDesigner5:hover ~ .circulo__webDesigner9 {
+    top: -60px;
+    left: -245px;
+    width: 30%;
+    height: 30%;
+    visibility: visible;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translate3d(4px, 8px, 56px)
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Web Developer */
+.circulo__webDeveloper1 {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    width: 10%;
+    height: 10%;
+    background-color: var(--rojo);
+    border: 2px solid var(--rojo);
+    opacity: 87%; 
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: animate1 3s linear infinite;
+}
+
+.circulo__webDeveloper2 {
+    position: absolute;
+    top: -30px;
+    left: 150px;
+    width: 18%;
+    height: 15%;
+    transition: 0.5s;
+    animation: animate3 6s ease-in-out infinite;
+}
+
+.circulo__webDeveloper3 {
+    position: absolute;
+    top: -30px;
+    left: 150px;
+    width: 20%;
+    height: 12%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+}
+
+.circulo__webDeveloper4 {
+    position: absolute;
+    top: -35px;
+    left: 140px;
+    width: 25%;
+    height: 16%;
+    background-color: rosybrown;
+    border: 2px solid rosybrown;
+    border-radius: 95% 135% 125% 90% / 96% 95% 95% 90%;
+    opacity: 70%;
+    transition: 0.5s;
+    animation: animate3 4s ease-in-out reverse infinite;
+}
+
+.circulo__webDeveloper5 {
+    position: absolute;
+    top: -40px;
+    left: -170px;
+    width: 95%;
+    height: 30%;
+    background-color: rosybrown;
+    border: 2px solid rosybrown;
+    border-radius: 55% 95% 25% 10% / 65% 85% 35% 30%;
+    opacity: 70%;
+    z-index: 7;
+    opacity: 1%;
+    /* transition: 0.5s; */
+    /* animation: animate3 4s ease-in-out reverse infinite; */
+}
+
+.circulo__webDeveloper6 {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    width: 6%;
+    height: 8%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+    visibility: hidden;
+    filter: grayscale(100%)
+}
+
+.circulo__webDeveloper7 {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    width: 3%;
+    height: 4%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+    visibility: hidden;
+    filter: grayscale(100%)
+}
+
+.circulo__webDeveloper8 {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    width: 15%;
+    height: 14%;
+    transition: 0.5s;
+    animation: animate3 1s ease-in-out infinite;
+    visibility: hidden;
+}
+
+.circulo__webDeveloper9 {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    width: 15%;
+    height: 14%;
+    transition: 0.5s;
+    animation: animate3 2s ease-in infinite;
+    visibility: hidden;
+}
+.circulo__webDeveloper1:hover {
+    background-color: var(--azulOscuro);
+    border-color: var(--azulOscuro);}
+
+.circulo__webDeveloper5:hover ~ .circulo__webDeveloper1   {
+    background-color: var(--azulOscuro);
+    border-color: var(--azulOscuro);
+}
+
+.circulo__webDeveloper5:hover ~ .circulo__webDeveloper3 {
+    top: -10px;
+    left: 465px;
+    width: 30%;
+    height: 30%;
+}
+
+.circulo__webDeveloper5:hover ~ .circulo__webDeveloper2 {
+    top: 190px;
+    left: -355px;
+    width: 50%;
+    height: 30%;
+}
+
+.circulo__webDeveloper5:hover ~ .circulo__webDeveloper6 {
+    top: 390px;
+    left: -205px;
+    visibility: visible;
+}
+
+.circulo__webDeveloper5:hover ~ .circulo__webDeveloper7 {
+    top: 80px;
+    left: 715px;
+    width: 150px;
+    height: 130px;
+    visibility: visible;
+}
+
+.circulo__webDeveloper5:hover ~ .circulo__webDeveloper8 {
+    top: 280px;
+    left: 615px;
+    visibility: visible;
+}
+
+.circulo__webDeveloper5:hover ~ .circulo__webDeveloper9 {
+    top: -20px;
+    left: -245px;
+    width: 20%;
+    height: 10%;
+    visibility: visible;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translate3d(4px, 8px, 56px)
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* circulos About */
+.circulo__about1 {
+    position: absolute;
+    top: 70px;
+    left: 350px;
+    width: 10%;
+    height: 10%;
+    background-color: var(--rojo);
+    border: 2px solid var(--rojo);
+    opacity: 87%; 
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: animate1 3s linear infinite;
+}
+
+.circulo__about2 {
+    position: absolute;
+    top: 60px;
+    left: 350px;
+    width: 18%;
+    height: 15%;
+    transition: 0.5s;
+    animation: animate3 6s ease-in-out infinite;
+}
+
+.circulo__about3 {
+    position: absolute;
+    top: 70px;
+    left: 350px;
+    width: 20%;
+    height: 12%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+}
+
+.circulo__about4 {
+    position: absolute;
+    top: 60px;
+    left: 330px;
+    width: 25%;
+    height: 16%;
+    background-color: rosybrown;
+    border: 2px solid rosybrown;
+    border-radius: 95% 135% 125% 90% / 96% 95% 95% 90%;
+    opacity: 70%;
+    transition: 0.5s;
+    animation: animate3 4s ease-in-out reverse infinite;
+}
+
+.circulo__about5 {
+    position: absolute;
+    top: 70px;
+    left: 350px;
+    width: 95%;
+    height: 30%;
+    background-color: rosybrown;
+    border: 2px solid rosybrown;
+    border-radius: 55% 95% 25% 10% / 65% 85% 35% 30%;
+    opacity: 70%;
+    z-index: 7;
+    opacity: 1%;
+    /* transition: 0.5s; */
+    /* animation: animate3 4s ease-in-out reverse infinite; */
+}
+
+.circulo__about6 {
+    position: absolute;
+    top: 70px;
+    left: 350px;
+    width: 6%;
+    height: 8%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+    visibility: hidden;
+    filter: grayscale(100%)
+}
+
+.circulo__about7 {
+    position: absolute;
+    top: 70px;
+    left: 350px;
+    width: 3%;
+    height: 4%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+    visibility: hidden;
+    filter: grayscale(100%)
+}
+
+.circulo__about8 {
+    position: absolute;
+    top: 70px;
+    left: 350px;
+    width: 15%;
+    height: 14%;
+    transition: 0.5s;
+    animation: animate3 1s ease-in-out infinite;
+    visibility: hidden;
+}
+
+.circulo__about9 {
+    position: absolute;
+    top: 70px;
+    left: 350px;
+    width: 15%;
+    height: 14%;
+    transition: 0.5s;
+    animation: animate3 2s ease-in infinite;
+    visibility: hidden;
+}
+.circulo__about1:hover {
+    background-color: var(--azulOscuro);
+    border-color: var(--azulOscuro);
+}
+
+.circulo__about5:hover ~ .circulo__about1   {
+    background-color: var(--azulOscuro);
+    border-color: var(--azulOscuro);
+}
+
+.circulo__about5:hover ~ .circulo__about3 {
+    top: -90px;
+    left: 565px;
+    width: 30%;
+    height: 30%;
+}
+
+.circulo__about5:hover ~ .circulo__about2 {
+    top: 190px;
+    left: -355px;
+    width: 50%;
+    height: 30%;
+}
+
+.circulo__about5:hover ~ .circulo__about6 {
+    top: 390px;
+    left: -205px;
+    visibility: visible;
+}
+
+.circulo__about5:hover ~ .circulo__about7 {
+    top: 80px;
+    left: 715px;
+    width: 150px;
+    height: 130px;
+    visibility: visible;
+}
+
+.circulo__about5:hover ~ .circulo__about8 {
+    top: 280px;
+    left: 615px;
+    visibility: visible;
+}
+
+.circulo__about5:hover ~ .circulo__about9 {
+    top: -20px;
+    left: -245px;
+    width: 20%;
+    height: 10%;
+    visibility: visible;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translate3d(4px, 8px, 56px)
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ciculos contact */
+.circulo__contact1 {
+    position: absolute;
+    top: 270px;
+    left: 360px;
+    width: 10%;
+    height: 10%;
+    background-color: var(--rojo);
+    border: 2px solid var(--rojo);
+    opacity: 87%; 
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: animate1 3s linear infinite;
+}
+
+.circulo__contact2 {
+    position: absolute;
+    top: 260px;
+    left: 340px;
+    width: 18%;
+    height: 15%;
+    transition: 0.5s;
+    animation: animate3 6s ease-in-out infinite;
+}
+
+.circulo__contact3 {
+    position: absolute;
+    top: 260px;
+    left: 340px;
+    width: 20%;
+    height: 12%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+}
+
+.circulo__contact4 {
+    position: absolute;
+    top: 255px;
+    left: 335px;
+    width: 25%;
+    height: 16%;
+    background-color: rosybrown;
+    border: 2px solid rosybrown;
+    border-radius: 95% 135% 125% 90% / 96% 95% 95% 90%;
+    opacity: 70%;
+    transition: 0.5s;
+    animation: animate3 4s ease-in-out reverse infinite;
+}
+
+.circulo__contact5 {
+    position: absolute;
+    top: 260px;
+    left: 340px;
+    width: 95%;
+    height: 40%;
+    background-color: rosybrown;
+    border: 2px solid rosybrown;
+    border-radius: 55% 95% 25% 10% / 65% 85% 35% 30%;
+    opacity: 70%;
+    z-index: 7;
+    opacity: 1%;
+    /* transition: 0.5s; */
+    /* animation: animate3 4s ease-in-out reverse infinite; */
+}
+
+.circulo__contact6 {
+    position: absolute;
+    top: 260px;
+    left: 340px;
+    width: 6%;
+    height: 8%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+    visibility: hidden;
+    filter: grayscale(100%)
+}
+
+.circulo__contact7 {
+    position: absolute;
+    top: 260px;
+    left: 340px;
+    width: 3%;
+    height: 4%;
+    transition: 0.5s;
+    animation: animate3 3s ease-out infinite;
+    visibility: hidden;
+    filter: grayscale(100%)
+}
+
+.circulo__contact8 {
+    position: absolute;
+    top: 260px;
+    left: 340px;
+    width: 15%;
+    height: 14%;
+    transition: 0.5s;
+    animation: animate3 1s ease-in-out infinite;
+    visibility: hidden;
+}
+
+.circulo__contact9 {
+    position: absolute;
+    top: 260px;
+    left: 340px;
+    width: 15%;
+    height: 14%;
+    transition: 0.5s;
+    animation: animate3 2s ease-in infinite;
+    visibility: hidden;
+}
+.circulo__contact1:hover {
+    background-color: var(--azulOscuro);
+    border-color: var(--azulOscuro);}
+
+.circulo__contact5:hover ~ .circulo__contact1   {
+    background-color: var(--azulOscuro);
+    border-color: var(--azulOscuro);
+}
+
+.circulo__contact5:hover ~ .circulo__contact3 {
+    top: -10px;
+    left: 465px;
+    width: 30%;
+    height: 30%;
+}
+
+.circulo__contact5:hover ~ .circulo__contact2 {
+    top: 190px;
+    left: -355px;
+    width: 35%;
+    height: 20%;
+}
+
+.circulo__contact5:hover ~ .circulo__contact6 {
+    top: 390px;
+    left: -205px;
+    visibility: visible;
+}
+
+.circulo__contact5:hover ~ .circulo__contact7 {
+    top: 80px;
+    left: 715px;
+    width: 150px;
+    height: 130px;
+    visibility: visible;
+}
+
+.circulo__contact5:hover ~ .circulo__contact8 {
+    top: 280px;
+    left: 615px;
+    visibility: visible;
+}
+
+.circulo__contact5:hover ~ .circulo__contact9 {
+    top: -20px;
+    left: -245px;
+    width: 20%;
+    height: 10%;
+    visibility: visible;
+}
+
+.robotContact {
+    transition: 0.5s;
+    animation: animate3 2s ease-out infinite;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translate3d(4px, 8px, 56px)
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Second banner, steps */
+.secondBanner__body {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url("img/background2.css");
+    /* mix-blend-mode: difference; */
+}
+
+/* About */
+#about__body {
+    position: relative;
+    width: 100%;
+    height: 540px;
+    z-index: 30;
+    /* background-color: var(--azul); */
+}
+.about__body {
+    position: relative;
+    width: 100%;
+    height: 540px;
+    z-index: 30;
+    /* background-color: var(--azul); */
+}
+
+#main__body {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    /* background-color: var(--azul); */
+}
+.main__body {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    /* background-color: var(--azul); */
+}
+/* Contact */
+.contact__body {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: var(--rojoOscuro);
+}
+
