@@ -53,9 +53,11 @@
 .menu-trigger {
 	position: relative;
 	top: -105px;
-	left: -332px;
+	left: -82px;
 	width: 350px;
 	height: 350px;
+	background: none;
+	border: none;
 	/* display: none; */
 }
 
