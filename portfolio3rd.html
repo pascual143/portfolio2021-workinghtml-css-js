@@ -7,13 +7,15 @@
 	<meta name="keywords" content="portfolio, web designer, web developer, graphic designer" />
 	<meta name="author" content="Pascual Vila" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <script src="scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Pascual Vila Portfolio</title>
 
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo1.css" />
-	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+    
+    
 </head>
 <body>
     <!-- Unique coco -->
@@ -45,12 +47,54 @@
                     </div>
                     <div class="main__body_presentacion">
                         <h1 class="h1__desarrollador">Pascual Vila</h1>
-                        <h1 class="h1__desarrollador">Web Developer, Graphic Designer</h1>
-                    </div>
+                        <h1 class="h1__desarrollador"></h1>
+                     </div>
             </a>
 
         </div>
     </div>
+
+   <!-- Second banner, steps -->
+   <div id="projects" class="projects">
+    <div class="section">
+        <!-- <div id="projects">
+            <p>PROJECTS</p>
+        </div> -->
+            <div class="slide">
+                <h1 class="h1__projects">Graphic Designer</h1>
+                <div class="content">
+                    <a href="SpanishIdioms.html" class="a__project_content2">Spanish Idioms Project</a>
+                    <a href="alice.html" class="a__project_content2">Alice Wonderful Project</a>
+                    <a href="logos.html" class="a__project_content3">Logos</a>
+                </div>
+            </div>
+            <div class="slide">
+                <h1 class="h1__projects">Web Designer</h1>
+
+                <div class="content">
+                    <a href="jobSite.html" class="a__project_content2">Job Site</a>
+                    <a href="powerGym.html" class="a__project_content2">Power Gym</a>
+                </div>
+            </div>
+            <div class="slide">
+                <h1 class="h1__projects">Web Developer</h1>
+
+                <div class="content">
+                    <a href="munch.html" class="a__project_content2">Munch</a>
+                    <a href="weather.html" class="a__project_content2">Weather</a>
+                </div>
+            </div>
+            <div class="slide">
+                <h1 class="h1__projects">Digital Marketing</h1>
+
+                <div class="content">
+                    <p>coming...</p>
+                </div>
+            </div>
+        </div>
+</div>
+
+
     <!-- Landing banner -->
     <div class="container">
         <div class="landingBanner__body">
@@ -199,45 +243,6 @@
 	</body>
 </body>
 
-   <!-- Second banner, steps -->
-   <div id="projects" class="projects">
-    <div class="section">
-        <!-- <div id="projects">
-            <p>PROJECTS</p>
-        </div> -->
-            <div class="slide">
-                <h1 class="h1__projects">Graphic Designer</h1>
-                <div class="content">
-                    <a href="SpanishIdioms.html" class="a__project_content1">Spanish Idioms Project</a>
-                    <a href="alice.html" class="a__project_content2">Alice Wonderful Project</a>
-                    <a href="logos.html" class="a__project_content3">Logos</a>
-                </div>
-            </div>
-            <div class="slide">
-                <h1 class="h1__projects">Web Designer</h1>
-
-                <div class="content">
-                    <a href="jobSite.html" class="a__project_content1">Job Site</a>
-                    <a href="powerGym.html" class="a__project_content2">Power Gym</a>
-                </div>
-            </div>
-            <div class="slide">
-                <h1 class="h1__projects">Web Developer</h1>
-
-                <div class="content">
-                    <a href="munch.html" class="a__project_content1">Munch</a>
-                    <a href="weather.html" class="a__project_content2">Weather</a>
-                </div>
-            </div>
-            <div class="slide">
-                <h1 class="h1__projects">Digital Marketing</h1>
-
-                <div class="content">
-                    <p>coming...</p>
-                </div>
-            </div>
-        </div>
-</div>
 <!-- About -->
 <div class="container">
     <div id="about__body">
@@ -247,26 +252,29 @@
 <body>
   
 <!-- technologies -->
-<div class="container">
-    <div id="technologies__body">
-        <h1>Technologias</h2>
-        <h1>Font End</h1>
-        <h2>JavaSCript, React...</h2>
-        <h1>Back End</h1>
-        <h2>Node, MongoDB PHP, .Net</h2>
-        <h1>Graphic Designer</h1>
-        <h2>Photoshop, Ilustrator, InDesign, XD</h2>
-        <h1>Video Editing</h1>
-        <h2>Premier Pro, Final Cut, anologic editing</h2>
+<!-- <div class="container">
+    <div id="technologies__body" class="technologies__body">
+        <h1 class="technologies__h1">Technologias</h2>
+        <h1 class="technologies__h1">Font End</h1>
+        <h2 class="technologies__h2">JavaSCript, React...</h2>
+        <h1 class="technologies__h1">Back End</h1>
+        <h2 class="technologies__h2">Node, MongoDB PHP, .Net</h2>
+        <h1 class="technologies__h1">Graphic Designer</h1>
+        <h2 class="technologies__h2">Photoshop, Ilustrator, InDesign, XD</h2>
+        <h1 class="technologies__h1">Video Editing</h1>
+        <h2 class="technologies__h2">Premier Pro, Final Cut, anologic editing</h2>
     </div>
-</div>
+</div> -->
 
 </body>
 <footer>
-    <p>Instagram</p>
-    <p>Facebook</p>
-    <p>LinkedIn</p>
-    <p>Phone</p>
+    <div class="socialMedia">
+        <p class="p__socialMedia"></p><button><i class="fas fa-phone-volume"></i>Phone +44 07456804259</button></p>
+        <p class="p__socialMedia"></p><button class="button__socialMedia" href="https://www.instagram.com/pascual143/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i>Instagram</button></p>
+        <p class="p__socialMedia"></p><button class="button__socialMedia" href="https://www.facebook.com/Pascual.Vila.Seg/" target="_blanck"><i class="fab fa-facebook-f"></i>Facebook</button></p>
+        <p class="p__socialMedia"></p><button class="button__socialMedia" href="https://www.linkedin.com/in/pascual-vila-web-developer/" target="_blanck"><i class="fab fa-linkedin-in"></i>LinkedIn</button></p>
+        
+    </div>
 </footer>
         <script src="js/demo.js"></script>
 		<script src="js/anime.min.js"></script>
@@ -275,4 +283,13 @@
             var element = document.getElementById("menu-trigger");
             element.classList.toggle("circulo__contact1");
           }</script>
+        <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+        <script>$(window).bind('scroll', function() {
+            if ($(window).scrollTop() > 00) {
+                $('.main__body_presentacion').hide();
+            }
+            else {
+                $('.main__body_presentacion').show();
+            }
+        });</script>
 </html>
