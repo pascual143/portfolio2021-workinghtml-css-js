@@ -1,0 +1,98 @@
+:root {
+    --fontTexto:  'raleway', sans-serif;
+    --fontHeading: 'Cuisine';
+    --fontSize: 25px;
+
+    /** Colores **/
+    --azulClaro : #d6eaf7;
+    --azulOscuro : #1d3557;
+    --rojo : #ed2a26;
+    --rojoOscuro : #AF1F24;
+    --blanco: #FFFFFF;
+}
+
+* {
+    margin: 2px;
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--fontHeading);
+}
+
+p {
+    font-family: var(--fontTexto);
+    font-size:  var(--fontSize);
+}
+
+.p__izq {
+    position: absolute;
+    right: 10px;
+}
+.div__overview {
+    width: 100%;
+    height: 120px;
+    padding: 50px;
+    background-color: seashell;
+}
+
+.div__problem {
+    width: 100%;
+    height: 200px;
+    padding: 50px;
+    background-color: azure;
+}
+
+.div__solution {
+    width: 100%;
+    height: 200px;
+    padding: 50px;
+    background-color: seashell;
+}
+
+.div__result {
+    width: 100%;
+    height: 200px;
+    padding: 50px;
+    background-color: azure;
+}
+
+.grid {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: 160px;
+    margin: 0;
+}
+
+.pugMask {
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    left: 100px;
+}
+
+.girlMask {
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    right: 100px;
+}
+
+.texto {
+    position: absolute;
+    width: 40%;
+    height: 200px;
+    left: 100px;
+}
+
+.texto__solution {
+    position: absolute;
+    width: 40%;
+    height: 200px;
+    right: 100px;
+}
+
+img {
+	margin: 10px;
+}
